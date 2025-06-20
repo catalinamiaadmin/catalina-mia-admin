@@ -7,6 +7,14 @@ import Importador from "./Importador";
 import Carrito from "./Carrito";
 import { CarritoProvider } from "./CarritoContext";
 import "./App.css";
+import InventarioValor from "./InventarioValor";
+
+<div className="Form-container">
+  <ProductForm />
+  <Importador />
+  <InventarioValor />
+</div>
+
 
 function App() {
   return (
