@@ -6,7 +6,6 @@ import Dashboard from "./Dashboard";
 import Importador from "./Importador";
 import Carrito from "./Carrito";
 import { CarritoProvider } from "./CarritoContext";
-import logo from "./logoCatalina.jpeg";
 import "./App.css";
 
 function App() {
