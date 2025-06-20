@@ -9,13 +9,6 @@ import { CarritoProvider } from "./CarritoContext";
 import "./App.css";
 import InventarioValor from "./InventarioValor";
 
-<div className="Form-container">
-  <ProductForm />
-  <Importador />
-  <InventarioValor />
-</div>
-
-
 function App() {
   return (
     <CarritoProvider>
@@ -27,6 +20,7 @@ function App() {
           <div className="Form-container">
             <ProductForm />
             <Importador />
+            <InventarioValor /> {/* ✅ ACÁ VA */}
           </div>
           <div className="List-container">
             <ProductList />
