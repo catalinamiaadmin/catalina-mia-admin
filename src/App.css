@@ -1,5 +1,5 @@
 .logo {
-  width: 100px;
+  width: 10px;
   max-width: 30%;
   height: auto;
   display: block;
@@ -7,7 +7,7 @@
   padding-top: 20px;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 50px) {
   .logo {
     max-width: 10%;
   }
