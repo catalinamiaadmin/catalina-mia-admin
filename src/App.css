@@ -1,105 +1,71 @@
-/* App.css */
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000;
-  color: #fff;
-}
+/* src/App.css - Estilos corregidos para tabla y vista móvil */
 
 .App {
   text-align: center;
-  padding: 2rem;
-}
-
-.App-header img {
-  width: 150px;
-  margin-bottom: 10px;
-}
-
-.App-title {
-  font-size: 2rem;
-  color: #ffb3e6;
-  text-shadow: 0 0 8px #ff69b4;
-  margin-bottom: 2rem;
-}
-
-.App-body {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.Form-container,
-.List-container {
-  background-color: #111;
-  border: 2px solid #ff69b4;
-  border-radius: 12px;
-  padding: 1.5rem;
-  min-width: 340px;
-}
-
-input,
-select,
-button {
-  padding: 0.4rem;
-  margin: 0.4rem 0.3rem;
-  border-radius: 8px;
-  border: 1px solid #ff69b4;
-  background-color: #fff;
-  color: #000;
-  width: calc(100% - 1rem);
-  font-size: 0.9rem;
-  transition: box-shadow 0.3s ease;
-}
-
-input:focus,
-select:focus {
-  outline: none;
-  box-shadow: 0 0 5px #ff69b4;
-}
-
-button {
-  background-color: #ff69b4;
+  background-color: #000;
   color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-button:hover {
-  background-color: #ff85c1;
-  transform: scale(1.05);
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #ff69b4;
-  margin: 2rem 0;
+h1, h2 {
+  color: #ff8be6;
+  text-shadow: 0 0 5px #ff8be6;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
-th,
-td {
-  border: 1px solid #ff69b4;
-  padding: 0.5rem;
+table th, table td {
+  border: 1px solid #e754c7; /* rosa suave */
+  padding: 8px;
   text-align: center;
-  color: #fff;
 }
 
-th {
-  background-color: #222;
-  color: #ffb3e6;
+table tr {
+  border: none !important;
 }
 
-select,
-input[type="file"] {
-  background-color: #fff;
+table th {
+  background-color: #0f0f0f;
+  color: #ffccff;
+  font-weight: bold;
+}
+
+input, select, button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  background-color: #ff5fc7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e054b8;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #e754c7;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
 }
