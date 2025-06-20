@@ -13,7 +13,6 @@ function App() {
     <CarritoProvider>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">CATALINA MÍA – Panel Admin</h1>
         </header>
         <div className="App-body">
