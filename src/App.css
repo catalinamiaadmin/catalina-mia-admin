@@ -3,102 +3,79 @@ body {
   background-color: black;
   color: white;
   font-family: 'Arial', sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  color: #ff80cc;
-  text-shadow: 0 0 6px #ff80cc;
-}
-
 .logo {
+  width: 300px;
+  max-width: 40%;
+  height: auto;
   display: block;
   margin: 0 auto;
-  width: 50px;
-  height: auto;
+  padding-top: 20px;
 }
 
-@media (max-width: 600px) {
-  .logo {
-    width: 180px;
-    margin-bottom: 1rem;
-  }
+h1 {
+  font-size: 2rem;
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px black;
 }
 
 table {
-  width: 100%;
+  width: 95%;
+  margin: 20px auto;
   border-collapse: collapse;
-  margin-top: 1rem;
 }
 
 th, td {
-  border: 1px solid #ff80cc;
-  padding: 8px;
-  text-align: center;
+  border: 1px solid #ff69b4;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 th {
   background-color: #1a1a1a;
-  color: #ffb3dd;
+  color: #ffb6c1;
 }
 
 td {
-  background-color: #0d0d0d;
+  background-color: #000;
 }
 
 button {
-  background-color: #ff66b2;
-  border: none;
-  padding: 6px 12px;
+  background-color: #ff69b4;
   color: white;
+  border: none;
+  padding: 5px 10px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #e60073;
+  background-color: #ff1493;
 }
 
 input, select {
-  padding: 6px;
-  margin: 4px;
-  border-radius: 4px;
-  border: 1px solid #ff80cc;
-}
-
-input[type="file"] {
-  border: none;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+  .logo {
+    max-width: 40%;
+    margin: 0 auto 20px auto;
   }
-}
 
-.section {
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border: 1px solid #ff80cc;
-  border-radius: 8px;
-}
+  table, th, td {
+    font-size: 0.8rem;
+  }
 
-.section h3 {
-  color: #ffb3dd;
-}
-
-hr {
-  border: 1px solid #ff80cc;
-  margin: 1rem 0;
+  input, select, button {
+    width: 90%;
+    margin: 5px auto;
+    display: block;
+  }
 }
