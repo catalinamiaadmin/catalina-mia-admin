@@ -1,4 +1,5 @@
 // src/ProductList.js
+import Scanner from "./Scanner"; // Agrega esto al inicio del archivo
 import React, { useEffect, useState } from "react";
 import { db } from "./firebaseConfig";
 import ExportButton from "./ExportButton";
@@ -128,6 +129,10 @@ function ProductList() {
           {marcasDisponibles.map((m) => (<option key={m} value={m}>{m}</option>))}
         </select>
         <ExportButton productos={productosFiltrados} />
+      </div>
+
+      <div style={{ marginBottom: 20 }}>
+        <Scanner onScanSuccess={(codigo) => setBusqueda(codigo)} />
       </div>
 
       <table border="1" cellPadding="6" cellSpacing="0">
