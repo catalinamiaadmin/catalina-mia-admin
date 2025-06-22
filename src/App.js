@@ -6,8 +6,8 @@ import Dashboard from "./Dashboard";
 import Importador from "./Importador";
 import Carrito from "./Carrito";
 import { CarritoProvider } from "./CarritoContext";
+import InventarioValor from "./InventarioValor"; // ✅ Componente para mostrar el valor del inventario
 import "./App.css";
-import InventarioValor from "./InventarioValor";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <div className="Form-container">
             <ProductForm />
             <Importador />
-            <InventarioValor /> {/* ✅ ACÁ VA */}
+            <InventarioValor /> {/* ✅ Panel con el valor total del inventario */}
           </div>
           <div className="List-container">
             <ProductList />
